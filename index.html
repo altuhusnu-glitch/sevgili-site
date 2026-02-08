@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>💗</title>
+
+<style>
+body {
+  margin: 0;
+  background: pink;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+}
+
+#zarf, #kart, #sevgi {
+  background: hotpink;
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#kart, #sevgi {
+  display: none;
+  background: white;
+  color: black;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#evet {
+  background: hotpink;
+  color: white;
+}
+
+#hayir {
+  position: absolute;
+}
+</style>
+</head>
+
+<body>
+
+<div id="zarf" onclick="
+  this.style.display='none';
+  document.getElementById('kart').style.display='block';
+">
+  💌 ZARFI AÇ
+</div>
+
+<div id="kart">
+  <h2>Beni seviyor musun? 💕</h2>
+
+  <button id="evet" onclick="
+    document.getElementById('kart').style.display='none';
+    document.getElementById('sevgi').style.display='block';
+  ">
+    Evet 💗
+  </button>
+
+  <button id="hayir"
+    onmouseover="
+      this.style.left = Math.random()*300 + 'px';
+      this.style.top = Math.random()*200 + 'px';
+    ">
+    Hayır 😅
+  </button>
+</div>
+
+<div id="sevgi" style="
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+">
+  <h1>Ben de seni çooook seviyorum 💖</h1>
+
+  <div style="
+    width: 200px;
+    height: 200px;
+    background: #ffe6ef;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin: 20px auto;
+  ">
+    💗💗💗
+  </div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
